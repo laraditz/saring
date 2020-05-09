@@ -6,7 +6,7 @@ use BadMethodCallException;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class Filter 
+class Filter
 {
     /**
      * The query builder.
@@ -48,7 +48,7 @@ class Filter
      */
     public function __call($name, $arguments)
     {
-        if (method_exists($this->query, $name)) {            
+        if (method_exists($this->query, $name)) {
             $this->query->$name(...$arguments);
         } else {
             throw new BadMethodCallException(sprintf(
