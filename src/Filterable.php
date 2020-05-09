@@ -2,6 +2,8 @@
 
 namespace RaditzFarhan\Saring;
 
+use Illuminate\Support\Str;
+
 trait Filterable
 {
     /**
@@ -32,8 +34,10 @@ trait Filterable
             $filter = new $filter_class($query, $data);
 
             foreach ($data as $key=>$value) {
-                if (method_exists($filter, $key)) {
-                    $filter->$key($value);
+                $method_name = Str::camel($key);
+
+                if (method_exists($filter, $method_name)) {
+                    $filter->$method_name($value);
                 }
             }
         }
