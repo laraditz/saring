@@ -4,9 +4,8 @@ namespace RaditzFarhan\Saring;
 
 use BadMethodCallException;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Http\Request;
 
-class Filter 
+class Filter
 {
     /**
      * The query builder.
@@ -16,25 +15,25 @@ class Filter
     public $query;
 
     /**
-     * The request object.
+     * The request data.
      *
-     * @var object
+     * @var array
      */
-    public $request;
+    public $data;
 
     /**
      * Receive query builder.
      *
      * @param  \Illuminate\Database\Eloquent\Builder  $query
-     * @param  \Illuminate\Http\Request  $request
+     * @param  array  $data
      * @return void
      *
      * @throws \BadMethodCallException
      */
-    public function __construct(Builder $query, Request $request)
+    public function __construct(Builder $query, $data = [])
     {
         $this->query = $query;
-        $this->request = $request;
+        $this->data = $data;
     }
 
     /**
@@ -48,7 +47,7 @@ class Filter
      */
     public function __call($name, $arguments)
     {
-        if (method_exists($this->query, $name)) {            
+        if (method_exists($this->query, $name)) {
             $this->query->$name(...$arguments);
         } else {
             throw new BadMethodCallException(sprintf(
