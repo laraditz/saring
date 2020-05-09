@@ -1,0 +1,24 @@
+{
+	"name": "raditzfarhan/saring",
+	"description": "A simple eloquent model filter.",
+	"type": "laravel-package",
+	"keywords": [ "laravel", "lumen", "eloquent", "model", "filter" ],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Raditz Farhan",
+			"email": "raditzfarhan@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": "^7.2.5",
+		"illuminate/http": "^7.0|^8.0",
+		"illuminate/database": "^7.0|^8.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"RaditzFarhan\\Saring\\": "src/"
+		}
+	}
+}
