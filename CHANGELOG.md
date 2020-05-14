@@ -2,6 +2,11 @@
 
 All notable changes to Saring will be documented in this file.
 
+## Version 1.0.2 (2020-05-14)
+
+### Changed
+- Update composer
+
 ## Version 1.0.1 (2020-05-14)
 
 ### Changed
