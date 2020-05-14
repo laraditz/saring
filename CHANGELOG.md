@@ -2,6 +2,11 @@
 
 All notable changes to Saring will be documented in this file.
 
+## Version 1.0.1 (2020-05-14)
+
+### Changed
+- Transfer ownership from raditzfarhan to laraditz
+
 ## Version 1.0.0 (2020-05-09)
 
 ### Added
