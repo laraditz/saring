@@ -1,9 +1,9 @@
 # Saring
 
-[![Latest Stable Version](https://poser.pugx.org/raditzfarhan/saring/v/stable?format=flat-square)](https://packagist.org/packages/raditzfarhan/saring)
-[![Total Downloads](https://img.shields.io/packagist/dt/raditzfarhan/saring?style=flat-square)](https://packagist.org/packages/raditzfarhan/saring)
-[![License](https://poser.pugx.org/raditzfarhan/saring/license?format=flat-square)](https://packagist.org/packages/raditzfarhan/saring)
-[![StyleCI](https://github.styleci.io/repos/7548986/shield?style=square)](https://github.com/raditzfarhan/saring)
+[![Latest Stable Version](https://poser.pugx.org/laraditz/saring/v/stable?format=flat-square)](https://packagist.org/packages/laraditz/saring)
+[![Total Downloads](https://img.shields.io/packagist/dt/laraditz/saring?style=flat-square)](https://packagist.org/packages/laraditz/saring)
+[![License](https://poser.pugx.org/laraditz/saring/license?format=flat-square)](https://packagist.org/packages/laraditz/saring)
+[![StyleCI](https://github.styleci.io/repos/7548986/shield?style=square)](https://github.com/laraditz/saring)
 
 A simple eloquent model filter for Laravel and Lumen.
 
@@ -12,14 +12,14 @@ A simple eloquent model filter for Laravel and Lumen.
 Via Composer
 
 ``` bash
-$ composer require raditzfarhan/saring
+$ composer require laraditz/saring
 ```
 
 ## Configuration
 
 Add filterable trait to your model as below snippet:
 ```php
-use RaditzFarhan\Saring\Filterable;
+use Laraditz\Saring\Filterable;
 
 class User extends Model implements AuthenticatableContract, AuthorizableContract
 {
@@ -34,7 +34,7 @@ Below snippet shows how the `UserFilter` could look like:
 ```php
 namespace App\Filters;
 
-use RaditzFarhan\Saring\Filter;
+use Laraditz\Saring\Filter;
 
 class UserFilter extends Filter
 {

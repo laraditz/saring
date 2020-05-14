@@ -1,6 +1,6 @@
 <?php
 
-namespace RaditzFarhan\Saring;
+namespace Laraditz\Saring;
 
 use BadMethodCallException;
 use Illuminate\Database\Eloquent\Builder;
