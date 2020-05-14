@@ -1,5 +1,5 @@
 {
-	"name": "raditzfarhan/saring",
+	"name": "laraditz/saring",
 	"description": "A simple eloquent model filter.",
 	"type": "laravel-package",
 	"keywords": [ "laravel", "lumen", "eloquent", "model", "filter" ],
@@ -19,7 +19,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"RaditzFarhan\\Saring\\": "src/"
+			"Laraditz\\Saring\\": "src/"
 		}
 	}
 }
